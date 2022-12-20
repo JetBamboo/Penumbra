@@ -38,6 +38,7 @@ public class Penumbra : IDalamudPlugin
     public const string RepositoryLower     = "https://raw.githubusercontent.com/bluefissure/penumbra/cn/repo.json";
     public const string TestRepositoryLower = "https://raw.githubusercontent.com/bluefissure/penumbra/test/repo.json";
     public const string FastRepositoryLower = "https://raw.fastgit.org/bluefissure/penumbra/cn/repo.json";
+    public const string GhProxyRepositoryLower = "https://ghproxy.com/https://raw.githubusercontent.com/bluefissure/penumbra/cn/repo.json";
     public const string CnRepositoryLower = "https://dalamud_cn_3rd.otters.cloud/plugins/all";
 
     public string Name
@@ -613,6 +614,7 @@ public class Penumbra : IDalamudPlugin
             RepositoryLower     => true,
             TestRepositoryLower => true,
             FastRepositoryLower => true,
+            GhProxyRepositoryLower => true,
             CnRepositoryLower   => true,
             _                   => false,
         };
