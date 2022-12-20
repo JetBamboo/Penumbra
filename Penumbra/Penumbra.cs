@@ -34,9 +34,11 @@ namespace Penumbra;
 
 public class Penumbra : IDalamudPlugin
 {
-    public const string Repository          = "https://raw.githubusercontent.com/xivdev/Penumbra/master/repo.json";
-    public const string RepositoryLower     = "https://raw.githubusercontent.com/xivdev/penumbra/master/repo.json";
-    public const string TestRepositoryLower = "https://raw.githubusercontent.com/xivdev/penumbra/test/repo.json";
+    public const string Repository          = "https://raw.githubusercontent.com/Bluefissure/Penumbra/cn/repo.json";
+    public const string RepositoryLower     = "https://raw.githubusercontent.com/bluefissure/penumbra/cn/repo.json";
+    public const string TestRepositoryLower = "https://raw.githubusercontent.com/bluefissure/penumbra/test/repo.json";
+    public const string FastRepositoryLower = "https://raw.fastgit.org/bluefissure/penumbra/cn/repo.json";
+    public const string CnRepositoryLower = "https://dalamud_cn_3rd.otters.cloud/plugins/all";
 
     public string Name
         => "Penumbra";
@@ -610,6 +612,8 @@ public class Penumbra : IDalamudPlugin
             null                => false,
             RepositoryLower     => true,
             TestRepositoryLower => true,
+            FastRepositoryLower => true,
+            CnRepositoryLower   => true,
             _                   => false,
         };
 #else
