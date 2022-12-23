@@ -16,7 +16,7 @@ public partial class ConfigWindow
     {
         // We use a big, nice game font for the title.
         private readonly GameFontHandle _nameFont =
-            Dalamud.PluginInterface.UiBuilder.GetGameFontHandle( new GameFontStyle( GameFontFamilyAndSize.Jupiter23 ) );
+            Dalamud.PluginInterface.UiBuilder.GetGameFontHandle( new GameFontStyle( GameFontFamilyAndSize.ChnAxis180 ) );
 
         // Header data.
         private string _modName          = string.Empty;
