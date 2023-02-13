@@ -32,20 +32,20 @@ public sealed partial class IndividualCollections
 
     public AddResult CanAdd( params ActorIdentifier[] identifiers )
     {
-        if( identifiers.Length == 0 )
-        {
-            return AddResult.Invalid;
-        }
+        // if( identifiers.Length == 0 )
+        // {
+        //     return AddResult.Invalid;
+        // }
 
-        if( identifiers.Any( i => !i.IsValid ) )
-        {
-            return AddResult.Invalid;
-        }
+        // if( identifiers.Any( i => !i.IsValid ) )
+        // {
+        //     return AddResult.Invalid;
+        // }
 
-        if( identifiers.Any( Individuals.ContainsKey ) )
-        {
-            return AddResult.AlreadySet;
-        }
+        // if( identifiers.Any( Individuals.ContainsKey ) )
+        // {
+        //     return AddResult.AlreadySet;
+        // }
 
         return AddResult.Valid;
     }
